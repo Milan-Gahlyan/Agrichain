@@ -32,32 +32,32 @@ Write a program to find the length of the longest substring without repeating ch
 **Framework Structure:**
 
 agrichain-automation/
-├── pom.xml # Maven dependencies & build config
-└── src
-├── main
-│ └── java
-│ └── com.agrichain.qa
-│ ├── config
-│ │ └── ConfigReader.java # Reads properties (browser, URL, etc.)
-│ ├── factory
-│ │ ├── DriverFactory.java # WebDriver factory
-│ │ └── DriverManager.java # Driver lifecycle mgmt
-│ ├── pages
-│ │ ├── BasePage.java # Common methods for all pages
-│ │ ├── InputPage.java # Home page (input & submit)
-│ │ └── ResultPage.java # Results page (output display)
-│ └── util
-│ └── LongestSubstringLogic.java # Core logic implementation
-└── test
-├── java
-│ └── com.agrichain.qa
-│ ├── runner
-│ │ └── TestRunner.java # Cucumber test runner
-│ └── stepdefinitions
-│ ├── Hooks.java # Setup & teardown
-│ └── StepDefinitions.java # Step definitions mapping
-└── resources
-├── config
-│ └── config.properties # Config (URL, browser, timeouts)
-└── features
-└── Agrichain.feature # BDD feature file
+├── pom.xml # Maven dependencies & build config <br>
+└── src <br>
+├── main <br>
+│ └── java <br>
+│ └── com.agrichain.qa <br>
+│ ├── config <br>
+│ │ └── ConfigReader.java # Reads properties (browser, URL, etc.) <br>
+│ ├── factory <br>
+│ │ ├── DriverFactory.java # WebDriver factory <br>
+│ │ └── DriverManager.java # Driver lifecycle mgmt <br>
+│ ├── pages <br>
+│ │ ├── BasePage.java # Common methods for all pages <br>
+│ │ ├── InputPage.java # Home page (input & submit) <br>
+│ │ └── ResultPage.java # Results page (output display) <br>
+│ └── util <br>
+│ └── LongestSubstringLogic.java # Core logic implementation <br>
+└── test <br>
+├── java <br>
+│ └── com.agrichain.qa <br>
+│ ├── runner <br>
+│ │ └── TestRunner.java # Cucumber test runner <br>
+│ └── stepdefinitions <br>
+│ ├── Hooks.java # Setup & teardown <br>
+│ └── StepDefinitions.java # Step definitions mapping <br>
+└── resources <br>
+├── config <br>
+│ └── config.properties # Config (URL, browser, timeouts) <br>
+└── features <br>
+└── Agrichain.feature #                                                                                         BDD feature file
