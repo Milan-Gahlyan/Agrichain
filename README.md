@@ -32,36 +32,32 @@ Write a program to find the length of the longest substring without repeating ch
 **Framework Structure:**
 
 agrichain-automation/
-├── pom.xml
+├── pom.xml # Maven dependencies & build config
 └── src
-    ├── main
-    │   └── java
-    │       └── com
-    │           └── agrichain
-    │               └── qa
-    │                   ├── config
-    │                   │   └── ConfigReader.java
-    │                   ├── factory
-    │                   │   ├── DriverFactory.java
-    │                   │   └── DriverManager.java
-    │                   ├── pages
-    │                   │   ├── BasePage.java
-    │                   │   ├── InputPage.java
-    │                   │   └── ResultPage.java
-    │                   └── util
-    │                       └── LongestSubstringLogic.java
-    └── test
-        ├── java
-        │   └── com
-        │       └── agrichain
-        │           └── qa
-        │               ├── runner
-        │               │   └── TestRunner.java
-        │               └── stepdefinitions
-        │                   ├── Hooks.java
-        │                   └── StepDefinitions.java
-        └── resources
-            ├── config
-            │   └── config.properties
-            └── features
-                └── Agrichain.feature
+├── main
+│ └── java
+│ └── com.agrichain.qa
+│ ├── config
+│ │ └── ConfigReader.java # Reads properties (browser, URL, etc.)
+│ ├── factory
+│ │ ├── DriverFactory.java # WebDriver factory
+│ │ └── DriverManager.java # Driver lifecycle mgmt
+│ ├── pages
+│ │ ├── BasePage.java # Common methods for all pages
+│ │ ├── InputPage.java # Home page (input & submit)
+│ │ └── ResultPage.java # Results page (output display)
+│ └── util
+│ └── LongestSubstringLogic.java # Core logic implementation
+└── test
+├── java
+│ └── com.agrichain.qa
+│ ├── runner
+│ │ └── TestRunner.java # Cucumber test runner
+│ └── stepdefinitions
+│ ├── Hooks.java # Setup & teardown
+│ └── StepDefinitions.java # Step definitions mapping
+└── resources
+├── config
+│ └── config.properties # Config (URL, browser, timeouts)
+└── features
+└── Agrichain.feature # BDD feature file
